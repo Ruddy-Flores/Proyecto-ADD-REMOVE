@@ -1,0 +1,146 @@
+:root {
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG : hsl(216, 50%, 16%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --White: hsl(0, 0%, 100%);
+    --Very-dark-blue-card-line: hsl(215, 32%, 27%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: "Outfit", sans-serif;
+    color: var(--soft-blue);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  
+  .main-cards {
+    background-color: var(--Very-dark-blue-card-BG);
+    width: min(87.5%, 22rem);
+    margin: 9.5rem auto;
+    border-radius: 15px;
+    padding: 1.5rem 1.6rem 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .imagen-contenedor {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .main-imagen {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
+  .imagen-contenedor:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .imagen-contenedor:hover .overlay + .views {
+    display: block;
+  }
+  
+  .sub {
+    color: var(--cyan);
+    font-weight: 600;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-creador {
+    font-weight: 300;
+  }
+  
+  .name-creador{
+    color: var(--White);
+  }
+  
+  .titles:hover,
+  .name-creador:hover {
+    color: var(--colour-cyan);
+  }
+  
+  .titles {
+    color: var(--White);
+    margin: 1.4rem 0 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  
+  .descriptions {
+    font-size: 1.1rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  
+  .sub-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1.4rem;
+  }
+  
+  
+  
+  .icono {
+    margin-right: 0.5rem;
+  }
+  
+  .info-creador {
+    display: flex;
+    border-top: 1px solid var(--Very-dark-blue-card-line);
+    padding-top: 1rem;
+    align-items: center;
+  }
+  
+  .imag {
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+  }
+  .button-container{
+    margin-top: 20px;
+    height: 36px;
+    display: flex;
+    align-content:space-around;
+    justify-content: space-around;
+}
+.button{
+    width: 400px;
+    border-radius: 10px;
+    border:1px solid black;
+    color: var(--White);
+    background-color:blueviolet;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.button:hover{
+    color:var(--Very-dark-blackish-blue);
+    background-color: var(--White);
+}
+.button:disabled{
+    opacity: 0.5;
+}
