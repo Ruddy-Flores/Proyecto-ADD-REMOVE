@@ -11,8 +11,6 @@ const state={
 createButton("Add Card", "addCard")
 createButton("Remove Card", "removeCard")
 
-//Petición del contenido de las tarjetas
-
 //Construcción de las tarjetas
 for (var i = 0; i < state.quantity; i++) {
     createCard()

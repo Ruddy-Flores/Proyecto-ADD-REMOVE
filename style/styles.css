@@ -130,11 +130,11 @@
 .button{
     width: 400px;
     border-radius: 10px;
-    border:1px solid black;
-    color: var(--White);
-    background-color:blueviolet;
+    border:3px solid rgb(59, 9, 241);
+    color:blue;
+    background-color:rgb(248, 252, 9);
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     
 }
 .button:hover{

@@ -1,4 +1,5 @@
-export function createButton (content, id){
+export function createButton (content, id)
+{
     const button = document.createElement('button')
     button.textContent=content
     button.className="button"
